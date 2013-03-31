@@ -16,7 +16,7 @@ module BackupDemon
 
     def self.alert(subject, &block)
       notifier = new(BackupDemon.config.recepients)
-      notifier.mail(subject, block)
+      notifier.mail(subject, &block)
     end
   end
 end
