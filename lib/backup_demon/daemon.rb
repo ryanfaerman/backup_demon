@@ -14,7 +14,7 @@ module BackupDemon
 
       if @drive.exists? && @drive.different?
         procline 'Found Drive'
-        
+
         Notifier.alert("Starting Backup") do
           "Starting Backup on #{Date.today}"
         end
@@ -24,7 +24,7 @@ module BackupDemon
             procline "Backing up #{source}"
             Sync.start(source, @drive.mount_point)
           end
-          @drive.ummount
+          @drive.unmount
 
           Notifier.alert("Backup Complete") do
             "Backup Complete on #{Date.today}"
