@@ -17,6 +17,7 @@ module BackupDemon
             procline "Backing up #{source}"
             Sync.start(source, @drive.mount_point)
           end
+          @drive.ummount
         end
       end
 
