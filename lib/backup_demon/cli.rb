@@ -54,6 +54,12 @@ module BackupDemon
       end
     end
 
+    desc "reload", "reload the configuration"
+    def reload
+      load_config
+    end
+
+
     protected
       def load_config
         opts = {}
