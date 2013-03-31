@@ -46,7 +46,6 @@ module BackupDemon
 
     def mounted?
       Device.mounted.keys.include?(@device)
-      true
     end
 
     def unmount
@@ -55,7 +54,6 @@ module BackupDemon
 
     def unmounted?
       !mounted?
-      true
     end
   end
 end
