@@ -34,7 +34,7 @@ module BackupDemon
     def mount(mount_point)
       @mount_point = mount_point
       FileUtils.mkdir_p(@mount_point) unless File.exists?(@mount_point)
-      puts "mount #{@device} #{@mount_point}"
+      `mount #{@device} #{@mount_point}`
       
       if mounted?
         @previous = File.stat(@device)
@@ -50,7 +50,7 @@ module BackupDemon
     end
 
     def unmount
-      puts "umount #{@device}"
+      `umount #{@device}`
     end
 
     def unmounted?
