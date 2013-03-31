@@ -2,6 +2,7 @@ require 'backup_demon/sync'
 require 'backup_demon/device'
 require 'backup_demon/daemon'
 require 'backup_demon/config'
+require 'backup_demon/notifier'
 
 module BackupDemon
 
