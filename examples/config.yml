@@ -1,0 +1,6 @@
+directories:
+  - /tmp/monkey
+  - /path/to/dir
+device: /dev/sdb1
+mount: /mnt/backup
+daemon: no
