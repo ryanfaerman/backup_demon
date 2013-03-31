@@ -10,7 +10,6 @@ module BackupDemon
 
     def run(interval = 5.0)
       interval = Float(interval)
-      procline 'waiting for drive...'
 
       if @drive.exists? && @drive.different?
         procline 'Found Drive'
@@ -35,7 +34,7 @@ module BackupDemon
           end
         end   
       end
-
+      procline 'waiting for drive...'
       Kernel.sleep(interval)
     end
 
