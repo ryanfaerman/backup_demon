@@ -17,6 +17,3 @@ module BackupDemon
     yield config
   end
 end
-
-
-# BackupDemon::Daemon.new(['tmp/banana', 'tmp/jones'], 'tmp/device', 'tmp/mount/point').run!
