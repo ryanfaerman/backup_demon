@@ -1,3 +1,3 @@
 module BackupDemon
-  Version = VERSION = '0.0.5'
+  Version = VERSION = '0.0.6'
 end
