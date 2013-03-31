@@ -5,7 +5,7 @@ Gem::Specification.new do |s|
   s.name              = "backup_demon"
   s.version           = BackupDemon::Version
   s.summary           = "BackupDemon backs up to external drives"
-  s.homepage          = "https://github.com/ryanfaerman"
+  s.homepage          = "https://github.com/ryanfaerman/backup_demon"
   s.email             = ["ry@nwitty.com"]
   s.authors           = ["Ryan Faerman"]
 

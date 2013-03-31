@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    backup_demon (0.0.1)
+    backup_demon (0.0.2)
       thor (~> 0.18)
 
 GEM
