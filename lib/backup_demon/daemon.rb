@@ -10,8 +10,6 @@ module BackupDemon
       interval = Float(interval)
       procline 'waiting for drive...'
 
-      # puts "#{@drive.exists?} && #{@drive.different?} (#{@drive.exists? && @drive.different?})"
-      # puts "#{@drive.previous.inspect} != #{@drive.current.inspect} || #{@drive.current.nil?}"
       if @drive.exists? && @drive.different?
         procline 'Found Drive'
         if @drive.mount(@mount_point)
@@ -32,7 +30,7 @@ module BackupDemon
     end
 
     def procline(string)
-      $0 = "backup-demon: #{string}"
+      $0 = "backup_demon: #{string}"
     end
 
     def pid
